@@ -1,0 +1,43 @@
+        Dim Word1 As String
+        Dim Word2 As String
+        Dim X As Integer
+        Dim Y As Integer
+        Dim A As Integer
+        Dim B As Integer
+        Dim Word1_Front As String
+        Dim Word1_Back As String
+        Dim Word2_Front As String
+        Dim Word2_Back As String
+
+
+        Console.Write("Enter First Word:")
+        Word1 = Console.ReadLine()
+        Console.Write("Enter Second Word:")
+        Word2 = Console.ReadLine()
+
+        X = Len(Word1)
+        Y = Len(Word2)
+
+        If X Mod 2 = 0 Then
+            A = X / 2
+            Word1_Front = Left(Word1, A)
+            Word1_Back = Mid(Word1, A + 1)
+        Else
+            A = X / 2
+            Word1_Front = Left(Word1, A + 1)
+            Word1_Back = Mid(Word1, A + 2)
+        End If
+
+        If Y Mod 2 = 0 Then
+            B = Y / 2
+            Word2_Front = Left(Word2, B)
+            Word2_Back = Mid(Word2, B + 1)
+        Else
+            B = Y / 2
+            Word2_Front = Left(Word2, B + 1)
+            Word2_Back = Mid(Word2, B + 2)
+
+        End If
+        Console.WriteLine(Word1_Front & Word2_Front & Word1_Back & Word2_Back)
+
+        Console.ReadKey()
