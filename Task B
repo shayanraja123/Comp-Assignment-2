@@ -1,0 +1,16 @@
+ Dim Word As String
+        Dim Word_Length As Integer
+        Dim First As String
+        Dim Last As String
+
+        Console.Write("Enter a word:")
+        Word = Console.ReadLine()
+        Word_Length = Len(Word)
+
+        If Word_Length >= 2 Then
+            First = Left(Word, 2)
+            Last = Right(Word, 2)
+            Console.WriteLine(First & Last)
+        Else : Console.WriteLine(" ")
+        End If
+        Console.ReadKey()
