@@ -1,0 +1,8 @@
+ Dim Donuts As Integer = 0
+        Console.Write("Enter Number Of Donuts:")
+        Donuts = Console.ReadLine()
+        If Donuts > 9 Then
+            Console.WriteLine("Number of Donuts: Many")
+        Else : Console.WriteLine("Number of Donuts: " & Donuts)
+        End If
+        Console.ReadKey()
