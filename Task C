@@ -1,0 +1,13 @@
+   Dim Word As String
+        Dim NewWord As String
+        Dim First As Char
+
+        Console.Write("Enter a Word: ")
+        Word = Console.ReadLine()
+
+        First = Left(Word, 1)
+        NewWord = Mid(Word, 2)
+        NewWord = NewWord.replace(First, "*")
+        Console.WriteLine(First & NewWord)
+
+        Console.ReadKey()
