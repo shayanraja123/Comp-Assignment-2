@@ -1,0 +1,20 @@
+ Dim Sentence As String
+        Dim A As Integer
+        Dim B As Integer
+        Dim C As String
+        Dim D As String
+
+        Console.Write("Enter a sentence:")
+        Sentence = Console.ReadLine()
+
+        A = InStr(Sentence, "not")
+        B = InStr(Sentence, "bad")
+
+        If A < B Then
+            C = Left(Sentence, A - 1)
+            D = Mid(Sentence, B + 3)
+
+            Console.WriteLine(C & "good" & D)
+        End If
+
+        Console.ReadKey()
